@@ -8,7 +8,17 @@
 </script> 
 </head>
 <body>
-<table>
+<table border="1">
+<tr><th>구분</th><th>A</th><th>B</th></tr>
+<tr><th>가</th><th>10</th><th>10</th></tr>
+<tr><th>나</th><th>20</th><th>20</th></tr>
+<tr><th>계</th><th>30</th><th>30</th></tr>
+</table>
+<input type="button" value="[가]색 변경" onclick="click1()"/>
+<input type="button" value="[나]색 변경" onclick="click2()"/>
+<input type="button" value="[다]색 변경" onclick="click3()"/>
+<input type="button" value="[라]색 변경" onclick="click4()"/>
+<!--  <table>
 <tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
 <tr><th>홍길동</th><th>B</th><th>장성</th></tr>
 <tr><th>임꺽정</th><th>AB</th><th>논산</th></tr>
@@ -16,7 +26,7 @@
 <tr><th>송대관</th><th>O</th><th>해남</th></tr>
 <tr><th>송가인</th><th>O</th><th>해남</th></tr>
 <tr><th>이낙연</th><th>A</th><th>광주</th></tr>
-</table>
+</table> -->
 <!--  <select>
 <option></option>
 <option>Apple</option>
@@ -46,11 +56,18 @@
 </ul>-->
 </body>
 <script>
-$(document).ready(function(){
+function clear() {
+	S("table *").removeAttr("style");
+}
+function click1() {}
+function click2() {}
+function click3() {}
+function click4() {}
+/*$(document).ready(function(){
 	$("tr:eq(0)").css("background","white");
 	$("tr:even").css("background","#cccccc");
 	$("tr:first").css("background","#000000").css("color","#FFFFFF");
-});
+});*/
 //정의 : setTimeout(행동, 딜레이시간)
 /*$(document).ready(function(){
 	setTimeout(function(){
