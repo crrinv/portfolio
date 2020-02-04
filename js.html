@@ -4,16 +4,7 @@
 <meta charset="EUC-KR">
 <title>01-2</title>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
- $(document).ready(function(){
-	 $('li.first').css('color','red');//1-1
-	 $('li.second').eq(0).css('color','yellow');//1-2
-	 $('li.first').eq(1).css('color','green');//1-3
-	 $('li.third').eq(0).css('color','blue');//2-1
-	 $('li.second').eq(1).css('color','purple');//2-2
-	 $('li.third').eq(1).css('color','brown');//2-3
-	 
 
- });
 </script> 
 </head>
 <body>
@@ -44,7 +35,14 @@
 	$('.hcls').css('color','green'); //class hcls인 요소의 css설정을 변경
 	$('.hcls.select').css('color','blue'); //class가 hcls select인 요소의 css설정을 변경
 });*/
-
+$(document).ready(function(){
+	 $('li.first').css('color','red');//1-1
+	 $('li.second').eq(0).css('color','yellow');//1-2
+	 $('li.first').eq(1).css('color','green');//1-3
+	 $('li.third').eq(0).css('color','blue');//2-1
+	 $('li.second').eq(1).css('color','purple');//2-2
+	 $('li.third').eq(1).css('color','brown');//2-3
+});
 
 </script>
 </html>
